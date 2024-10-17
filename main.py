@@ -15,7 +15,7 @@ class Task:
 #       if self.status == 'active':
             print(f'list task in progress {self.name}')
 
-# init lists of class Task objects
+# class Task list init
 instances = []
 tx = Task('t1', 'task1', '20', 'active' )
 instances.append(tx)
@@ -38,6 +38,7 @@ def addtask ():
 tx = addtask()
 instances.append(tx)
 
+# list instance
 for instance in instances:
     if instance.status == 'active':
         print(instance.listtask())
